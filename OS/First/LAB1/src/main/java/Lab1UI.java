@@ -1,4 +1,6 @@
 
+import javax.swing.*;
+
 import static java.lang.Thread.sleep;
 
 import java.io.File;
@@ -22,6 +24,7 @@ public class Lab1UI extends javax.swing.JFrame {
     static String combo2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton12;
     private javax.swing.JComboBox<String> jCombo2;
     private javax.swing.JComboBox<String> jCombo1;
     private javax.swing.JFormattedTextField jFilename2;
@@ -47,6 +50,7 @@ public class Lab1UI extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
         jCombo2 = new javax.swing.JComboBox<>();
         jCombo1 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
@@ -74,6 +78,13 @@ public class Lab1UI extends javax.swing.JFrame {
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton12.setText("Test");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
             }
         });
 
@@ -132,9 +143,12 @@ public class Lab1UI extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
-                                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                                                .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        )
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -220,6 +234,16 @@ public class Lab1UI extends javax.swing.JFrame {
     }
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+        filename2 = jFilename2.getText();
+        d_dir2 = jTextField2.getText();
+        d2 = Integer.parseInt(getDepth_Dir(d_dir2)[0]);
+        dir2 = getDepth_Dir(d_dir2)[1];
+        combo2 = jCombo2.getSelectedItem().toString();
+        System.out.println(combo2 + " with \"" + filename2 + "\" in title (" + d2 + " depth): ");
+        MyRunnable my = new MyRunnable(2);
+    }
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {
         filename2 = jFilename2.getText();
         d_dir2 = jTextField2.getText();
         d2 = Integer.parseInt(getDepth_Dir(d_dir2)[0]);

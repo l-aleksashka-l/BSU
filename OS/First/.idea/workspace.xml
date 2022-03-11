@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a27357c1-63e2-4aa5-b270-a643290a471d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/Lab1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab1/src/ThreadSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../First.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -70,6 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645980884618</updated>
       <workItem from="1645980886350" duration="734000" />
+      <workItem from="1646300930999" duration="40000" />
     </task>
     <servers />
   </component>
