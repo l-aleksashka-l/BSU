@@ -1,1 +1,6 @@
 /OS/First/LAB1/target/
+*.class
+target/
+*.iml
+.idea/
+.DS_Store
