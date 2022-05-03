@@ -1,0 +1,3 @@
+3.OUT: test approved
+1.OUT: test not approved
+4.OUT: test approved
