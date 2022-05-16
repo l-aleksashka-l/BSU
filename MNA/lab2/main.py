@@ -1,16 +1,16 @@
 import math
 
+
 def myfun(x):
-    return math.log(1 + x) + (7/(2*x + 6))
+    return (x) + 3*math.cos(x) - 1
 
 
 def fun_der1(x):
-    return (1/(x+1)) - (14/(2*x+6)**2)
+    return 1 - 3 * math.sin(x)
 
 
 def fun_der2(x):
-    return -(1/(x+1)**2) - (56/(2*x+6)**3)
-
+    return -(3*math.cos(x))
 
 def Lagrange_ravn_coef(fun, a, b, n):
     coefs = []
